@@ -98,7 +98,7 @@ public value class Result<out T> @PublishedApi internal constructor(
         @Suppress("INAPPLICABLE_JVM_NAME")
         @InlineOnly
         @JvmName("failure")
-        public inline fun <T> failure(exception: Throwable): Result<T> =
+        public inline fun failure(exception: Throwable): Result<Nothing> =
             Result(createFailure(exception))
     }
 
